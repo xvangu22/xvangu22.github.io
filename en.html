@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esmeralda & Hoa</title>
+    <meta name="description" content="Wedding page for Esmeralda and Hoa" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("moVFFLhVFUmQjH0az");
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="hero__container"> <!-- Hero -->
+        <div class="hero__image"> <!-- Hero image -->
+          <img src='./assets/images/esmet2.webp'></img>
+
+          <div class="hero__image--text">
+            <h1>
+              Hoa & Esmeralda
+            </h1>
+            <p>
+              We are getting married!
+            </p>
+          </div>
+          <p class="hero__image--credits">
+            Photo by: Fabienne Michi Photography
+          </p>
+        </div> <!-- Hero image -->
+
+        <div class="hero__card"> <!-- Hero text -->
+          <div class="hero__card-address-wrapper">
+            <p class="hero__card-address">
+              Sommarrovägen 24
+            </p>
+            <p class="hero__card-address">
+              Örebro
+            </p>
+          </div>
+          <p class="hero__card-date">
+            Saturday, September 2, 2023
+          </p>
+
+          <div class="hero__button--rsvp-wrapper">
+            <a href="#rsvp" class="hero__button--rsvp">
+              Respond here
+            </a>
+            <p class="hero__button--subtext">
+              Please respond before May 13th
+            </p>
+          </div>
+          <a href="#details" class="hero__button--details">View more details</a>
+        </div> <!-- Hero text -->
+      </div> <!-- Hero -->
+
+      <div class="language-switch"> 
+        <a href="/">SV</a>
+        <a href="en.html" class="language-selected">EN</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="details" id="details"> <!-- Details -->
+        <div class="details__wrapper">
+          <h2 class="details__heading">
+            Details
+          </h2>
+  
+          <div class="details__section"> <!-- Attending -->
+            <h3 class="details__section-heading">Parking</h3>
+            <p>
+              Hejhej
+            </p>
+          </div>
+          <div class="details__section"> <!-- Attending -->
+            <h3 class="details__section-heading">Logistics</h3>
+            <p>
+              Hejhej
+            </p>
+          </div>
+        </div>
+      </div> <!-- Details -->
+
+      <ul class="timeline"> <!-- Timeline -->
+        <li class="timeline__item">
+          <div class="timeline__img-container">
+            <img src="assets/images/rings.svg">
+          </div>
+          <p class="timeline__title">
+            Ceremony
+          </p>
+          <p class="timeline__time">
+            14.00
+          </p>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__img-container">
+            <img src="assets/images/cheers.svg">
+          </div>
+          <p class="timeline__title">
+            Cocktail Hour
+          </p>
+          <p class="timeline__time">
+            15.00
+          </p>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__img-container">
+            <img src="assets/images/food.svg">
+          </div>
+          <p class="timeline__title">
+            Dinner
+          </p>
+          <p class="timeline__time">
+            17.00
+          </p>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__img-container">
+            <img src="assets/images/partyhat.svg">
+          </div>
+          <p class="timeline__title">
+            Party
+          </p>
+          <p class="timeline__time">
+            20.00
+          </p>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__img-container">
+            <img src="assets/images/cake.svg">
+          </div>
+          <p class="timeline__title">
+            Cake
+          </p>
+          <p class="timeline__time">
+            21.00
+          </p>
+        </li>
+      </ul> <!-- Timeline -->
+
+      <div class="rsvp__sent hidden" id="rsvp_sent">
+        <h2 class="rsvp__sent-heading">
+          RSVP
+        </h2>
+        <p>
+          Thank you for your answer!
+        </p>
+      </div>
+      
+      <form class="rsvp__form" id="rsvp"> <!-- RSVP Form -->
+        <div class="rsvp__wrapper">
+          <h2 class="rsvp__form-heading">
+            RSVP
+          </h2>
+  
+          <div class="rsvp__field"> <!-- Name -->
+            <div class="rsvp__input-wrapper">
+              <h3>
+                <label for='name' class="rsvp__field-heading required"> 
+                  Your name 
+                </label>
+              </h3>
+              <input type='text' name='name' id='name' required></input>
+            </div>
+          </div> <!-- Name -->
+  
+          <div class="rsvp__field"> <!-- Attending -->
+            <h3 class="rsvp__field-heading required"> Will you be attending?</h3>
+            
+            <div class="rsvp__column"> <!-- Column -->
+              <div class="rsvp__option">
+                <label for='attendYes' class="rsvp__radio">
+                  <input type='radio' name='attend' id='attendYes' value='Yes' required/>
+                  Yes, I am ready to attack the dancefloor
+                </label>
+              </div>
+              
+              <div class="rsvp__option">
+                <label for='attendNo' class="rsvp__radio">
+                  <input type='radio' name='attend' id='attendNo' value='No'/>
+                  No, and I will forever regret this decision
+                </label>
+              </div>
+            </div> <!-- Column -->
+          </div> <!-- Attending -->
+  
+          <div class="rsvp__field"> <!-- FamilyFriendToggler -->
+            <h3 class="rsvp__field-heading required">For our</h3>
+  
+            <div class="rsvp__slider family_friend">
+                <input type='radio' name='family_friend' id='family' value='Family' checked required/>
+                <label for='family' class="rsvp__radio">Family</label>
+                <input type='radio' name='family_friend' id='friend' value='Friend'/>
+                <label for='friend' class="rsvp__radio">Friends</label>
+                <span class="rsvp__slider-selection"></span>
+            </div>
+  
+            <div class="rsvp__field" id="family_field"> <!-- Family -->
+              <h3 class="rsvp__field-heading"> How many from your family are coming? </h3>
+              
+              <div class="rsvp__space">
+                <label for='attendees'> Number of people attending, including you </label>
+                <div class="rsvp__number">
+                  <button class="rsvp__number-button rsvp__number-button--left" id="decrementButton">-</button>
+                  <input type="number" name="attendees" id="attendees" value='0' />
+                  <button class="rsvp__number-button rsvp__number-button--right" id="incrementButton">+</button>
+                </div>
+              </div>
+            </div> <!-- Family -->
+                
+            <div class="rsvp__field" id="friend_field"> <!-- +1 -->
+              <h3 class="rsvp__field-heading"> Will you bring a +1?</h3>
+  
+              <div class="rsvp__column">
+                <div class="rsvp__option" >
+                  <label for='plusOneYes' class="rsvp__radio">
+                    <input type='radio' name='plusOne' id='plusOneYes' value='Yes'/>
+                    Yes
+                  </label>
+                </div>
+                
+                <div class="rsvp__option" >
+                  <label for='plusOneNo' class="rsvp__radio">
+                    <input type='radio' name='plusOne' id='plusOneNo' value='No'/>
+                    No, but I might find myself one at the wedding
+                  </label>
+                </div>
+              </div>
+            </div> <!-- +1 -->
+          </div> <!-- FamilyFriendToggler -->
+  
+          <div class="rsvp__field"> <!-- Food -->
+            <h3 class="rsvp__field-heading required">Please select your entrée</h3>
+  
+            <div class="rsvp__slider ">
+                <input type='radio' name='entree' id='entree_beef' value='Beef' checked/>
+                <label for='entree_beef' class="rsvp__radio"> Beef</label>
+                <input type='radio' name='entree' id='entree_vegetarian' value='Vegetarian'/>
+                <label for='entree_vegetarian' class="rsvp__radio">Vegetarian</label>
+                <span class="rsvp__slider-selection"></span>
+            </div>
+          </div> <!-- Food -->
+  
+          <div class="rsvp__field"> <!-- Dietary requirements -->
+            <h3 class="rsvp__field-heading">Dietary requirements</h3>
+            
+            <div class="rsvp__column">
+              <div class="rsvp__option">
+                <label for='dietary_veg' class="rsvp__checkbox">
+                  <input type='checkbox' name='dietary_veg' id='dietary_veg' />
+                  Vegan 
+                </label>
+              </div>
+  
+              <div class="rsvp__option">
+                <label for='dietary_gluten' class="rsvp__checkbox">
+                  <input type='checkbox' name='dietary_gluten' id='dietary_gluten' />
+                  Glutenintolerant
+                </label>
+              </div>
+  
+              <div class="rsvp__option">
+                <label for='dietary_lactose' class="rsvp__checkbox">
+                  <input type='checkbox' name='dietary_lactose' id='dietary_lactose' />
+                  Lactoseintolerant 
+                </label>
+              </div>
+  
+              <div class="rsvp__input-wrapper">
+                <label for='dietary_other' > Other allergies/dietary requirements</label>
+                <textarea name='dietary_other' id='dietary_other' ></textarea>
+              </div>
+            </div>
+          </div> <!-- Dietary requirements -->
+  
+          <div class="rsvp__field"> <!-- Contact info -->
+            <h3 class="rsvp__field-heading">Contact information</h3>
+            
+            <div class="rsvp__input-wrapper">
+              <label for='contact_email' class="required"> E-mail </label>
+              <input type='email' name='contact_email' id='contact_email' required></input>
+            </div>
+  
+            <div class="rsvp__input-wrapper">
+              <label for='contact_phone' class="required"> Phone number </label>
+              <input type='text' name='contact_phone' id='contact_phone' required></input>
+            </div>
+          </div> <!-- Contact info -->
+  
+          <div class="rsvp__field"> <!-- Additional message -->
+            <h3 class="rsvp__field-heading"> Any messages for the couple? </h3>
+            <label for='message'>  </label>
+            <textarea name='message' id='message' placeholder="If you would like to hold a speech, request a song or something else please write a message here..."></textarea>
+          </div> <!-- Additional message -->
+  
+          <div class="rsvp__submit-container">
+            <input type="submit" class="rsvp__submit" value="Send RSVP" />
+          </div>
+        </form> <!--RSVP Form-->
+      </div>
+    </main>
+
+    <footer>
+      <h2>
+        A day to remember where two people decide to spend the rest of their lives together.
+      </h2>
+    </footer>
+    <script src="./assets/js/forms.js"></script>
+  </body>
+</html>
