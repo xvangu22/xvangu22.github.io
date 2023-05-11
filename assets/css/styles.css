@@ -76,6 +76,11 @@ label, p, input, textarea, button, a, li {
   padding: 0;
   margin: 0; }
 
+sup {
+  color: #FEFEFE;
+  margin-left: 2px;
+  font-size: 0.75rem; }
+
 ul {
   list-style: circle; }
 
